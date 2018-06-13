@@ -8,3 +8,4 @@ whitenoise==3.3.0
 django-allauth
 django-bootstrap4
 djangorestframework
+datapunt-authorization-django
