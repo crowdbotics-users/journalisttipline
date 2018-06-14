@@ -10,3 +10,4 @@ django-bootstrap4
 djangorestframework
 datapunt-authorization-django
 django-profiling-dashboard
+dj-database-url
