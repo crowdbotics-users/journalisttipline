@@ -126,10 +126,6 @@ ALLOWED_HOSTS = ['*']
 SITE_ID = 1
 MIDDLEWARE += ['whitenoise.middleware.WhiteNoiseMiddleware']
 
-DATABASES = {
-    'default': env.db()
-}
-
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
     'allauth.account.auth_backends.AuthenticationBackend'
@@ -161,3 +157,10 @@ ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_EMAIL_VERIFICATION = None
 LOGIN_REDIRECT_URL = '/'
+
+try:
+    from .local_settings import *
+except ImportError:
+	DATABASES = {
+		'default': env.db()
+	}

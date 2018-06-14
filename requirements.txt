@@ -9,5 +9,4 @@ django-allauth
 django-bootstrap4
 djangorestframework
 datapunt-authorization-django
-custom-user-roles
 django-profiling-dashboard
