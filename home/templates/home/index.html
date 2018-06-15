@@ -1,4 +1,3 @@
-
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
@@ -8,8 +7,6 @@
             <ol class="breadcrumb">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">News</a></li>
-                <li><a href="#">Tech</a></li>
-                <li class="active"><a href="#">Mobile</a></li>
             </ol>
         </div>
     </div>
@@ -529,8 +526,10 @@
     </div>
 </section>
 {% else %}
-<a class="btn btn-warning" href="{% url "account_login" %}">Login to view news</a>Or<br>
-<a href="{% url "account_signup" %}">Signup</a>
+<h1 class="text-center"><a class="btn btn-warning" href="{% url "account_login" %}">Login to view</a></h1>
+<h1 class="text-center">Or</h1>
+<h1 class="text-center"><a href="{% url "account_signup" %}">Signup</a></h1>
+
 {% endif %}
 <!-- Subscriber Section -->
 {% endblock %}

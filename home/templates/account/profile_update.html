@@ -1,10 +1,11 @@
 {% extends "account/base.html" %}
-
+{% load bootstrap4 %}
 {% block content %}
-<div class="container">
+<div class="container centre" style="margin: 0 auto; width:50%">
+	<h1 class="text-center">Profile</h1>
 	<form method="post" action="">{% csrf_token %}
-		{{form.as_p}}
-		<input type="submit" name="submit" class="btn btn-success">
+		{% bootstrap_form form %}
+		<input type="submit" name="submit" class="btn btn-success" value="Submit">
 	</form>
 </div>
 {% endblock content %}

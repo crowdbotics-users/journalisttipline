@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '2iuj0+l10o1xltfbwj+9#+zvdwbjc%&1-&uwucp^3$%3d^e9!$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -164,3 +164,4 @@ except ImportError:
 	import dj_database_url
 	db_from_env = dj_database_url.config(conn_max_age=500)
 	DATABASES['default'].update(db_from_env)
+	DEBUG = False
