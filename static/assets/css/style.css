@@ -48,19 +48,17 @@ body {
     color: #7d7d7d;
     background: #ffffff;
 }
-
-
-/* --------------------------------------
- * Global Typography
- *------------------------------------------*/
-div.centre {
-  width: 200px;
-  display: block;
-  background-color: #eee;
-  margin-left: auto;
-  margin-right: auto;
+.navbar-brand
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin:0 auto;
 }
-
+.navbar-toggle {
+    z-index:3;
+}
 h1,
 h2,
 h3,
